@@ -1,0 +1,24 @@
+# Routes
+### La route POST pour créer un compte
+http://localhost:3000/api/auth/signup
+
+### La route POST pour se logger
+http://localhost:3000/api/auth/login
+
+### La route POST pour créer une nouvelle sauce
+http://localhost:3000/api/sauces
+
+### La route GET pour afficher toute les sauces
+http://localhost:3000/api/sauces
+
+### La route GET pour afficher une sauce
+http://localhost:3000/api/sauce/:id
+
+### La route PUT pour modifier une sauce
+http://localhost:3000/api/sauces/:id
+
+### La route DELETE pour supprimer une sauce
+http://localhost:3000/api/sauces/:id 
+
+### La route POST pour définir les "Likes" d'une sauce
+http://localhost:3000/api/sauces/:id/like
