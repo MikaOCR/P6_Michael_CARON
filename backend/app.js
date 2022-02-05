@@ -1,17 +1,9 @@
 const express = require("express");
-const mongoose = require("mongoose");
 const path = require("path");
 
+const mongoose = require("./db/db");
 const sauceRoutes = require("./routes/sauce");
 const userRoutes = require("./routes/user");
-
-mongoose
-  .connect(
-    "mongodb+srv://MikaDev:Farscape01@cluster0.hsujc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", //adresse fournie par mongodb
-    { useNewUrlParser: true, useUnifiedTopology: true }
-  )
-  .then(() => console.log("Connexion à MongoDB réussie !"))
-  .catch(() => console.log("Connexion à MongoDB échouée !"));
 
 const app = express();
 
